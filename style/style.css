@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+main{
+    display: contents;
+
+}
+h2{text-align: center;}
+
+
+.character-list{
+
+    display: grid;
+    grid-template-columns: repeat(3,minmax(24px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.character-card{
+    width: clamp(20vw, 100px, 100%);
+    aspect-ratio: 1;
+    background-color: blue;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 5%;
+}
+
+.character-name{
+    font-weight: bolder;
+    color: white;
+}
+
+.choose-button{
+    background: green;
+    
+}
