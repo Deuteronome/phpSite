@@ -66,11 +66,24 @@ input{
 }
 
 .choose-button{
-    background: grey;
     border-radius: 20px;
     padding: 20px;
     cursor: pointer;
+    border: hsla(17, 94%, 54%, 0) 5px solid;
+    background-color: hsl(17, 94%, 54%);
 
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.choose-button:hover{
+    border: hsl(17, 94%, 41%) 5px solid;
+
+    color: rgb(0, 0, 0);
+
+    transition: 0.2s ease-in-out;
 }
 
 #goku{
