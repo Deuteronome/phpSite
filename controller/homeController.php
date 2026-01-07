@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/title.js" defer></script>
 </head>
 
 <body>
     <aside></aside>
     <div id="right">
         <header>
-            <h1>Dragon ball ...</h1>
+            <div id="scroll-title">
+                <h1>Dragon ball fighter</h1>
+                <h1>Dragon ball fighter</h1>
+            </div>
         </header>
 
         <main>
@@ -57,6 +61,7 @@
                 <p>J'aime pas dragon ball</p>
         </footer>
     </div>
+    
 </body>
 
 
