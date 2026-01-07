@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    height: 100vh;
+    aspect-ratio: 1/2;
+    background-image: url(../assets/misterbear.59_gokusite_--ar_2855_--video_1_--end_loop_4f3408b3-e7ed-4f8a-bc1a-ede24255b4aa_2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
