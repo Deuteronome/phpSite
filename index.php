@@ -1,2 +1,5 @@
 <?php
-    header("location:./controller/homeController.php");
+
+
+    header('location:./controller/homeController.php');
+
