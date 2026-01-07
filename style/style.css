@@ -5,8 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body{
+body {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+#right {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +118,7 @@ background-image: url("../asset/mohamed_ali.jpeg");
 aside {
     height: 100vh;
     aspect-ratio: 1/2;
-    background-image: url(../assets/misterbear.59_gokusite_--ar_2855_--video_1_--end_loop_4f3408b3-e7ed-4f8a-bc1a-ede24255b4aa_2.gif);
+    background-image: url(../asset/gokuSide.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }   
