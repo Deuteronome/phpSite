@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -27,21 +29,66 @@ h2{text-align: center;}
 
 .character-card{
     width: clamp(20vw, 100px, 100%);
-    aspect-ratio: 1;
+    height: 30vh;
     background-color: blue;
-
+    border-radius: 20px;
     display: flex;
     justify-content: end;
     align-items: end;
     padding: 5%;
+
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+.character-card:has(input[type="radio"]:checked){
+
+    transform: scale(110%);
+    transition: 0.2s ease-in-out;
+    background-size: cover;
+
+    border: 5px hsl(34, 98%, 51%) solid;
+}
+input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
 
 .character-name{
     font-weight: bolder;
     color: white;
+    text-shadow: 0 0 5px black;
 }
 
 .choose-button{
-    background: green;
+    background: grey;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+#goku{
+background-image: url("../asset/goku.jpeg");
+}
+#freezer{
+background-image: url("../asset/freezer.jpeg");
+    
+}
+#cell{
+background-image: url("../asset/cell.jpg");
+    
+}
+#pikachu{
+background-image: url("../asset/pikachu.png");
+    
+}
+#mohamed{
+background-image: url("../asset/mohamed_ali.jpeg");
     
 }

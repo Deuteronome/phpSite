@@ -19,23 +19,28 @@
 
         <div class="character-list">
 
-            <div class="character-card 1 selected ">
+            <div class="character-card selected" id="goku" data-name="Goku">
+                <input type="radio" name="select"/>
                 <p class="character-name">Goku</p>
             </div>
 
-            <div class="character-card 2 ">
+            <div class="character-card" id="freezer" data-name="Freezer" >
+                <input type="radio" name="select"/>
                 <p class="character-name">Freezer</p>
             </div>
 
-            <div class="character-card 3">
+            <div class="character-card" id="cell" data-name="Cell">
+                <input type="radio" name="select"/>
                 <p class="character-name">Cell</p>
             </div>
 
-            <div class="character-card 4">
+            <div class="character-card" id="pikachu" data-name="Pikachu">
+                <input type="radio" name="select"/>
                 <p class="character-name">Pikachu</p>
             </div>
 
-            <div class="character-card 5">
+            <div class="character-card" id="mohamed" data-name="Mohamed">
+                <input type="radio" name="select"/>
                 <p class="character-name">Mohamed</p>
             </div>
 
