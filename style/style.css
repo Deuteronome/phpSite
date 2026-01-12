@@ -145,7 +145,6 @@ background-image: url("../asset/mohamed_ali.jpeg");
 aside {
     height: 100vh;
     aspect-ratio: 1/2;
-    background-image: url(../asset/gokuSide.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }   
