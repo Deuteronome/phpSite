@@ -1,6 +1,6 @@
 <?php
     $title = "Choose your fighter";
-    $asideImg = "../asset/logo.gif";
+    $asideImg = "../asset/anim/logo.gif";
 
     require_once("../view/homeView.php");
 ?>
