@@ -1,10 +1,10 @@
 <?php
 if ($_GET["character"] == 'goku') {
     $title = "Sangoku - the Saiyan";
-    $asideImg = "../asset/gokuSide.gif";
+    $asideImg = "../asset/anim/gokuSide.gif";
 } elseif ($_GET["character"] == 'freezer') {
     $title = "Freezer - the icy alien";
-    $asideImg = "../asset/freezer.gif";
+    $asideImg = "../asset/anim/freezer.gif";
 } else {
     header("location:../controller/homeController.php");
 

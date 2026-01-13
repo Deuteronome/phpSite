@@ -1,0 +1,3 @@
+dbz_admin'@'localhost
+
+'Picolo59'

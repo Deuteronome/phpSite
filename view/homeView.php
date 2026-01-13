@@ -25,31 +25,20 @@
             <h2>Select a character</h2>
 
             <div class="character-list">
+               <?php
+                    foreach($fighterList as $fighter) {
+                        ?>
+                            <a href="../controller/characterController.php?id=<?= $fighter["id"] ?>" 
+                            class="character-card" style="background-image:url(<?= $fighter["thumb"] ?>)">
 
-                <a href="../controller/characterController.php?character=goku" class="character-card" id="goku" data-name="Goku">
-                    
-                <p class="character-name">Goku</p>
-                </a>
+                                <p class="character-name"><?= $fighter["name"] ?></p>
+                             </a>
+                        <?php
+                    }
 
-                <a href="../controller/characterController.php?character=freezer" class="character-card" id="freezer" data-name="Freezer" >
+                ?>
 
-                <p class="character-name">Freezer</p>
-                </a>
-
-                <div class="character-card" id="cell" data-name="Cell">
-                    
-                <p class="character-name">Cell</p>
-                </div>
-
-                <div class="character-card" id="pikachu" data-name="Pikachu">
-                    
-                <p class="character-name">Pikachu</p>
-                </div>
-
-                <div class="character-card" id="mohamed" data-name="Mohamed">
-
-                <p class="character-name">Mohamed</p>
-                </div>
+        
 
             </div>
 
@@ -61,4 +50,4 @@
 </body>
 
 
-</html>
+<html>
