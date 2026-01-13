@@ -121,27 +121,6 @@ input{
     transition: 0.2s ease-in-out;
 }
 
-#goku{
-background-image: url("../asset/goku.jpeg");
-}
-#freezer{
-background-image: url("../asset/freezer.jpeg");
-    
-}
-#cell{
-background-image: url("../asset/cell.jpg");
-    
-}
-#pikachu{
-background-image: url("../asset/pikachu.png");
-    
-}
-#mohamed{
-background-image: url("../asset/mohamed_ali.jpeg");
-    
-}
-
-
 aside {
     height: 100vh;
     aspect-ratio: 1/2;
