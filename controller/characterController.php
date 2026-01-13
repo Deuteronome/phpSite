@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 if ($_GET["character"] == 'goku') {
     $title = "Sangoku - the Saiyan";
     $asideImg = "../asset/anim/gokuSide.gif";
@@ -34,3 +35,21 @@ if ($_GET["character"] == 'goku') {
         ?>      
 </body>
 </html>
+=======
+    
+   
+    if($_GET["character"]=='goku') {
+        $title = "Sangoku - the Sayen";
+        $asideImg = "../asset/anim/gokuSide.gif";
+    } else if ($_GET["character"]=='freezer') {
+        $title = "Freezer - the icy alien";
+        $asideImg = "../asset/anim/freezer.gif";
+    } else {
+        header("location:../controller/homeController.php");
+    }
+
+    require_once("../view/characterView.php");
+    
+?>
+
+>>>>>>> d52449e80d501f7a5b56440efcc365a951e6faef

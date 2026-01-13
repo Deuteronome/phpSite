@@ -1,0 +1,1 @@
+<aside style="background-image:url(<?= $asideImg ?>)"></aside>
