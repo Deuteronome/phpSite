@@ -16,11 +16,7 @@
     <?php
     require_once("../view/_header.php");
     ?>
-        <main>
-
-          
-
-        </main>
+        <main></main>
 
     </div>
 </body>
