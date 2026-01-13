@@ -1,6 +1,6 @@
 <?php
 if($_GET["personnage"]=='Goku') {
-$title = "Sangoku - the Sayen";
+$title = "Sangoku - the Saiyan";
 $asideImg ="../asset/gokuSide.gif";
 
 } else if($_GET["personnage"]=='Freezer') {
