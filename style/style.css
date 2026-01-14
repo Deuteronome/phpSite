@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: "dbz";
+    src: url(./FightingSpirit.otf);
+}
 * {
 
     margin: 0;
@@ -39,10 +42,12 @@ header {
 }
 
 h1 {
+    font-family: "dbz", sans-serif;
     font-size : 10vh;
     letter-spacing: 25px;
     text-align: center;
     width:50%;
+    color: firebrick;
 }
 
 main{
@@ -63,7 +68,7 @@ h2{text-align: center;}
 }
 
 .character-card{
-    width: clamp(8vw,100px,20vw);
+    width: clamp(10vw,100px,20vw);
     background-color: blue;
     border-radius: 20px;
     display: flex;
@@ -71,7 +76,7 @@ h2{text-align: center;}
     align-items: end;
     padding: 5%;
     aspect-ratio: 1/2;
-
+    text-decoration: none;
     background-position: center;
     background-size: cover;
 
@@ -85,6 +90,7 @@ h2{text-align: center;}
 
     border: 5px hsl(17, 94%, 54%) solid;
 }
+
 input{
     position: absolute;
     width: 100%;
@@ -95,9 +101,11 @@ input{
 }
 
 .character-name{
+    font-size: 1.1rem;
     font-weight: bolder;
-    color: white;
-    text-shadow: 0 0 5px black;
+    color: firebrick;
+    -webkit-text-stroke: black 0.5px;
+    
 }
 
 .choose-button{
