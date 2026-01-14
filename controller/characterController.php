@@ -1,15 +1,22 @@
 <?php
     
-   
-    if($_GET["character"]=='goku') {
-        $title = "Sangoku - the Sayen";
-        $asideImg = "../asset/anim/gokuSide.gif";
-    } else if ($_GET["character"]=='freezer') {
-        $title = "Freezer - the icy alien";
-        $asideImg = "../asset/anim/freezer.gif";
-    } else {
-        header("location:../controller/homeController.php");
+    require_once('../model/Data.php');
+    require_once('../model/Fighter.php');
+    $bdd = new Data();
+
+    $fighterData = $bdd->getFighterById($_GET['id']);
+
+    if(!$fighterData) {
+        header('location:../controller/homeController.php');
     }
+
+    $fighter = new Fighter($fighterData);
+
+
+    $title = $fighter->getTitle();
+    $asideImg = $fighter->getGif();
+   
+    
 
     require_once("../view/characterView.php");
     
