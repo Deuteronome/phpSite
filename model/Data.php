@@ -1,6 +1,7 @@
 <?php
 
 class Data {
+
     private PDO $bdd;
 
     public function __construct() {
@@ -14,13 +15,21 @@ class Data {
         } catch (PDOException $e) {
             die("Erreur de connexion à la base de données : " . $e->getMessage());
         }
-
     }
+
     public function getAllFighter() {
         $sqlQuery = "SELECT id, name, thumb FROM fighter";
-        $statment = $this->bdd->prepare($sqlQuery);
-        $statment->execute();
-        $req = $statment->fetchAll();
+        $statement = $this->bdd->prepare($sqlQuery);
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getFighterById($id) {
+        $sqlQuery = "SELECT * FROM fighter WHERE id = :kangourou";
+        $statement = $this->bdd->prepare($sqlQuery);
+        
+        $statement->execute(['kangourou' => $id]);
+        $req = $statement->fetch();
         return $req;
     }
 }

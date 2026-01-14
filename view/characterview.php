@@ -8,16 +8,21 @@
     <script src="../script/title.js" defer></script>
 </head>
 <body>
-     <?php
+    <?php
     require_once("../view/_aside.php");
     ?>
 
     <div id="right">
-    <?php
-    require_once("../view/_header.php");
-    ?>
-        <main></main>
-
+        <?php
+        require_once("../view/_header.php");
+        ?>
+        <main class="fighter-main">
+            <p class="fighter-description"><?= $fighter->getDescription() ?></p>
+            <p class="stat-power">Power: <?= $fighter->getPower() ?></p>
+            <p class="stat-resistance">Resistance: <?= $fighter->getResistance() ?></p>
+            <p class="stat-hitpoints">Hitpoints: <?= $fighter->getHitpoints() ?></p>
+            <p class="stat-chaos">Chaos: <?= $fighter->getChaos() ?></p> 
+        </main>
     </div>
 </body>
 </html>
