@@ -24,4 +24,17 @@ class Data {
 
         return $req;
     }
-}
+
+
+ public function getAllFighterById ($id) {
+        $sqlQuery = "SELECT * FROM figher WHERE id= :id";
+        $statement = $this->bdd->prepare($sqlQuery);
+        $statement->execute([
+            'id' => $id
+        ]);
+        $req = $statement->fetch();
+
+        return $req;
+    }
+}   
+

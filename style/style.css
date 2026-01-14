@@ -139,3 +139,28 @@ aside {
     background-repeat: no-repeat;
     background-size: cover;
 }   
+
+.character-sheet{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    border: 20px;
+}
+
+.desc{
+    width: 80%;
+}
+
+.stat{
+    width: calc(75%/2);
+    padding: 30px;
+    margin: 15px 0;
+}
+
+.desc, .stat{
+    border-radius: 12px;
+    background-color: rgb(68, 60, 60);
+    color: rgb(212, 89, 89);
+}

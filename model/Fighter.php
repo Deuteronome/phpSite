@@ -7,6 +7,11 @@ class Fighter {
     private string $name;
     private string $thumb;
     private string $gif;
+    private string $description;
+    private int $power;
+    private int $resistance;
+    private int $hp;
+    private int $chaos;
 
     /* constructeur*/
     public function __construct($fighterData)
@@ -16,9 +21,15 @@ class Fighter {
         $this->name=$fighterData["name"];
         $this->thumb=$fighterData["thumb"];
         $this->gif=$fighterData["gif"];
+        $this->description= $fighterData["description"];
+        $this->power=$fighterData["power"];
+        $this->resistance=$fighterData["resistance"];
+        $this->hp=$fighterData["hp"];
+        $this->chaos=$fighterData["chaos"];
     }
 
     /*assessurs*/
+
 
     public function getId():int {
         return $this->id;
@@ -32,7 +43,6 @@ class Fighter {
         return $this->title;
     }
 
-
     public function getThumb():string {
         return $this->thumb;
     }
@@ -41,7 +51,43 @@ class Fighter {
         return $this->gif;
     }
 
+    public function getDescription():string {
+        return $this->description;
+    }
+
+    public function getPower():int {
+        return $this->power;
+    }
+
+    public function getResistance():int {
+        return $this->resistance;
+    }
+
+    public function getHitpoints():int {
+        return $this->hp;
+    }
+
+    public function getChaos():int {
+        return $this->chaos;
+    }
+
     public function setTitle($title):void {
         $this->title = $title;
+    }
+
+    public function setPower($power):void {
+        $this->power = $power;
+    }
+
+    public function setResistance($resistance):void {
+        $this->resistance = $resistance;
+    }
+
+    public function setHp($hp):void {
+        $this->$hp = $hp;
+    }
+
+    public function setChaos($chaos):void {
+        $this->chaos = $chaos;
     }
 }

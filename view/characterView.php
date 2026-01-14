@@ -16,10 +16,14 @@
             require_once("../view/_header.php");
         ?>
 
-        <main>
-
-           
-            
+    <main>
+        <div class="character-sheet">
+            <p class="desc"><?= $fighter->getDescription() ?></p>
+            <p class="stat"><?= $fighter->getPower() ?></p>
+            <p class="stat"><?= $fighter->getResistance() ?></p>
+            <p class="stat"><?= $fighter->getChaos() ?></p>
+            <p class="stat"><?= $fighter->getHitpoints() ?></p>
+        </div> 
         </main>
 
     </div>
