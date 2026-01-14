@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+
+  body {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -13,13 +14,13 @@ body {
     
 }
 
-#right {
+ #right {
     width: calc(100vw - 50vh);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
+} 
 
 header {  
     
@@ -128,3 +129,18 @@ aside {
     background-repeat: no-repeat;
     background-size: cover;
 }   
+
+.description {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    border-style: solid;
+    border: black;
+      
+}
+
+.stat {
+    padding: 10px;
+    
+}

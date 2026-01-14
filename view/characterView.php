@@ -17,7 +17,11 @@
         ?>
 
         <main>
-
+            <p class="description"><?= $fighter->getDescription() ?></p>
+            <p class="stat">Puissance : <?= $fighter->getPower() ?></p>
+            <p class="stat">Résistance : <?= $fighter->getResistance() ?></p>
+            <p class="stat">PV : <?= $fighter->getHp() ?></p>
+            <p class="stat">Chaos : <?= $fighter->getChaos() ?></p>
            
             
         </main>
