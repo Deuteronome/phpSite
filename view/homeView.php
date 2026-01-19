@@ -18,7 +18,7 @@
         <?php require_once("../view/_header.php"); ?>
 
         <main>
-            <h2>Select a character</h2>
+          
 
             <div class="character-list">
                 <?php foreach ($fighters as $fighter) { ?>

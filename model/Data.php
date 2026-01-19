@@ -8,8 +8,8 @@ class Data {
         try {
             $this->bdd = new PDO(
                 'mysql:host=localhost;dbname=dbz_fighter;charset=utf8',
-                'admin_dbz',
-                'Aviva1605@'
+                'dbz_admin',
+                'Picolo59'
             );
             $this->bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
@@ -18,17 +18,17 @@ class Data {
     }
 
     public function getAllFighter() {
-        $sqlQuery = "SELECT id, name, thumb FROM fighter";
+        $sqlQuery = "SELECT id, name, thumb FROM figher";
         $statement = $this->bdd->prepare($sqlQuery);
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function getFighterById($id) {
-        $sqlQuery = "SELECT * FROM fighter WHERE id = :kangourou";
+        $sqlQuery = "SELECT * FROM figher WHERE id = :id";
         $statement = $this->bdd->prepare($sqlQuery);
         
-        $statement->execute(['kangourou' => $id]);
+        $statement->execute(['id' => $id]);
         $req = $statement->fetch();
         return $req;
     }
