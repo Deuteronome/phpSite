@@ -10,7 +10,7 @@ class Fighter {
     private string $description;
     private int $power;
     private int $resistance;
-    private int $hp;
+    private int $hitpoints;
     private int $chaos;
 
     /* constructeur*/
@@ -24,7 +24,7 @@ class Fighter {
         $this->description= $fighterData["description"];
         $this->power=$fighterData["power"];
         $this->resistance=$fighterData["resistance"];
-        $this->hp=$fighterData["hp"];
+        $this->hitpoints=$fighterData["hitpoints"];
         $this->chaos=$fighterData["chaos"];
     }
 
@@ -64,7 +64,7 @@ class Fighter {
     }
 
     public function getHitpoints():int {
-        return $this->hp;
+        return $this->hitpoints;
     }
 
     public function getChaos():int {
@@ -83,8 +83,8 @@ class Fighter {
         $this->resistance = $resistance;
     }
 
-    public function setHp($hp):void {
-        $this->$hp = $hp;
+    public function sethitpoints($hitpoints):void {
+        $this->$hitpoints = $hitpoints;
     }
 
     public function setChaos($chaos):void {

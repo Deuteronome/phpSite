@@ -18,7 +18,7 @@ class Data {
         }
     }
 
-    public function getAllFighter() {
+    public function getAllFighters() {
         $sqlQuery = "SELECT id, name, thumb FROM figher";
         $statement = $this->bdd->prepare($sqlQuery);
         $statement->execute();
@@ -27,11 +27,32 @@ class Data {
 
     public function getFighterById($id) {
         $sqlQuery = "SELECT * FROM figher WHERE id = :id";
-        $statement = $this->bdd->prepare($sqlQuery);
-        
+        $statement = $this->bdd->prepare($sqlQuery);        
         $statement->execute(['id' => $id]);
         $req = $statement->fetch();
         return $req;
+    }
+
+        public function createFighter($name, $description, $title, $power, $resistance, $hitpoints, $chaos, $thumb="../asset/thumb/goku.png", $gif="../asset/anim/logo.gif") {
+        $sqlQuery = "INSERT INTO figher (name, description, title, power, resistance, hitpoints, chaos, thumb, gif)
+            values (:name, :description, :title, :power, :resistance, :hitpoints, :chaos, :thumb, :gif)";
+        $statement = $this->bdd->prepare($sqlQuery);
+        try{
+        $statement->execute([
+                'name'=>$name,
+                'description' => $description,
+                'title'=>$title,
+                'power'=>$power,
+                'resistance'=>$resistance,
+                'hitpoints'=>$hitpoints,
+                'chaos'=>$chaos,
+                'thumb'=> $thumb,
+                'gif'=>$gif
+        ]);
+        } catch(Exception $e) {
+            return $e->getMessage();
+        }
+        return true;
     }
 }
 

@@ -4,7 +4,7 @@
    require_once('../model/Fighter.php');
    $bdd = new Data();
 
-   $fighterData = $bdd->getAllFighterById($_GET['id']);
+   $fighterData = $bdd->getFighterById($_GET['id']);
 
    if(!$fighterData) {
         header('location:../controller/homeController.php');
