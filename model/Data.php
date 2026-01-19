@@ -32,4 +32,26 @@ class Data {
         $req = $statement->fetch();
         return $req;
     }
+
+        public function createFighter($name, $description, $title, $power, $resistance, $hitpoints, $chaos, $thumb="../assets/goku.png", $gif="../assets/anim/gokuSide.gif") {
+        $sqlQuery = "INSERT INTO fighter (name, description, title, power, resistance, hitpoints, chaos, thumb, gif)
+        values (:name, :description, :title, :power, :resistance, :hitpoints, :chaos, :thumb, :gif)";
+        $statement = $this->bdd->prepare($sqlQuery);
+        try{
+        $statement->execute([
+            'name' => $name,
+            'description' => $description,
+            'title' => $title,
+            'power' => $power,
+            'resistance' => $resistance,
+            'hitpoints' => $hitpoints,
+            'chaos' => $chaos,
+            'thumb' => $thumb,
+            'gif' => $gif
+        ]);
+        } catch(exception $e){
+            return $e->getMessage();
+        }
+        return true;
+    }
 }

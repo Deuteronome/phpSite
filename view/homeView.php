@@ -18,8 +18,6 @@
         <?php require_once("../view/_header.php"); ?>
 
         <main>
-            <h2>Select a character</h2>
-
             <div class="character-list">
                 <?php foreach ($fighters as $fighter) { ?>
                     <a href="../controller/characterController.php?id=<?= $fighter["id"]?>" class="character-card" style="background-image: url(<?= $fighter["thumb"] ?>)">
