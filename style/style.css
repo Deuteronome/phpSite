@@ -167,3 +167,19 @@ aside {
     text-decoration: none;
     border-radius: 8px;
 }
+
+.btn-createFighter {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-createFighter:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
+
+            

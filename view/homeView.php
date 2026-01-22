@@ -6,6 +6,7 @@
     <title>home</title>
     <link rel="stylesheet" href="../style/style.css">
     <script src="../script/title.js" defer></script>
+
 </head>
 
 <body>
@@ -17,6 +18,10 @@
         <?php require_once("../view/_header.php"); ?>
 
         <main>
+            <a href="../controller/newPersonnageController.php" class="character-card " id="chatgpt">
+            <p class="character-name">Inconnu.e</p>
+            </a>
+            
             <div class="character-list">
                 <?php foreach ($fighters as $fighter) { ?>
                     <a href="../controller/characterController.php?id=<?= $fighter["id"]?>" class="character-card" style="background-image: url(<?= $fighter["thumb"] ?>)">
@@ -24,6 +29,8 @@
                         <p class="character-name"><?= $fighter["name"] ?></p>
 
                     </a>
+                        
+
                 <?php } ?>
             </div>
 
