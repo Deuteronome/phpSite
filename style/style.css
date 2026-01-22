@@ -39,7 +39,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 300%;
+    width: 400%;
 }
 
 h1 {
@@ -157,15 +157,13 @@ aside {
     background-size: cover;
 }
 
-#back-btn {
-    padding: 10px 20px;
-    background-color: firebrick;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-#back-btn:hover {
-    background-color: darkred;
+.btn-retour {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px 18px;
+    background-color: red;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
 }

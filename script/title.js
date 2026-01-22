@@ -5,7 +5,7 @@ let offset = 0;
 setInterval(() => {
     offset -= 0.5;
     scrollTitle.style.left = `${offset}%`;
-    if(offset == -150) {
+    if(offset == -200) {
         offset =0;
     }
 },25);

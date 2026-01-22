@@ -6,7 +6,6 @@
     <title>home</title>
     <link rel="stylesheet" href="../style/style.css">
     <script src="../script/title.js" defer></script>
-    <script src="../script/btn.js" defer></script>
 </head>
 
 <body>
