@@ -23,8 +23,12 @@
             <p class="stat-resistance">Resistance: <?= $fighter->getResistance() ?></p>
             <p class="stat-hitpoints">Hitpoints: <?= $fighter->getHitpoints() ?></p>
             <p class="stat-chaos">Chaos: <?= $fighter->getChaos() ?></p>
-           <a href="../controller/homeController.php" class="btn-retour">Retour</a>
-        </div>
+        
+           
+            <div class="choice-zone">
+                <a href="../controller/homeController.php" class="btn-retour">Retour</a>
+    <a href="../controller/CardgameController.php" class="btn">Valider</a>
         </main>
-
+        </div>
+     
     </div>

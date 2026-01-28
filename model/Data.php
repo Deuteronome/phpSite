@@ -24,6 +24,15 @@ class Data {
         return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getAllOtherFighter($id) {
+      $sqlQuery = "SELECT * FROM fighter WHERE id != :id";
+        $statement = $this->bdd->prepare($sqlQuery);
+        
+        $statement->execute(['id' => $id]);
+        $req = $statement->fetchAll();
+        return $req;
+    }
+
     public function getFighterById($id) {
         $sqlQuery = "SELECT * FROM fighter WHERE id = :kangourou";
         $statement = $this->bdd->prepare($sqlQuery);
