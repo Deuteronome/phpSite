@@ -25,8 +25,18 @@ class Data {
         return $req;
     }
 
+    public function getOtherFighters($id) {
+        $sqlQuery = "SELECT * FROM `character` WHERE id != :id";
+        $statement = $this->bdd->prepare($sqlQuery);
+        $statement->execute([
+            'id' => $id
+        ]);
+        $req = $statement->fetchAll();
+
+        return $req;
+    }
     public function getFighterById ($id) {
-        $sqlQuery = "SELECT * FROM `character` WHERE id= :id";
+        $sqlQuery = "SELECT * FROM `character` WHERE id = :id";
         $statement = $this->bdd->prepare($sqlQuery);
         $statement->execute([
             'id' => $id

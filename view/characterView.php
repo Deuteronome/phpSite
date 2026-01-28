@@ -1,13 +1,11 @@
-<
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="../style/style.css">
     <script src="../script/title.js" defer></script>
-
-    <!-- Style fiche personnage -->
-    
 </head>
 <body>
 
@@ -24,9 +22,10 @@
             <p class="stat-resistance">Resistance: <?= $fighter->getResistance() ?></p>
             <p class="stat-hitpoints">HP: <?= $fighter->getHp() ?></p>
             <p class="stat-chaos">Chaos: <?= $fighter->getChaos() ?></p>
-            <a id="back-btn" href="../controller/homeController.php">Retour</a>
+            <a class="btn" href="../controller/cardGameController.php">Valider</a>
+            <a class="btn" href="../controller/homeController.php">Retour</a>
         </div>
-
+     
 
         <script>
         // Affiche la fiche du personnage quand on sélectionne un radio
@@ -50,3 +49,7 @@
         </main>
 
     </div>
+
+
+</body>
+</html>

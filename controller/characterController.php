@@ -1,5 +1,6 @@
 <?php
-    
+    session_start();
+
     require_once("../model/Data.php");
     require_once("../model/Fighter.php");
     $bdd = new Data();
@@ -10,7 +11,9 @@
         header('location:../controller/homeController.php');
     }
 
-    $fighter = new Fighter($fighterData);
+    $fighter  = new Fighter($fighterData);
+    $_SESSION["playerCharacter"]=$fighterData;
+
 
 
     $title = $fighter->getTitle();

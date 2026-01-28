@@ -18,7 +18,6 @@ if(is_numeric ($_POST["power"]) && is_numeric ($_POST["resistance"]) && is_numer
 }
 
 $power = is_numeric ($_POST["power"]);
-var_dump($power);
 
 
 
