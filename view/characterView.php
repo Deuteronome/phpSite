@@ -26,7 +26,7 @@
                 <p class="stat">Points de vie : <?= $fighter->getHitpoints() ?></p>
             </div>
             <div class="choice-zone">
-                <a href="../controller/cardGame.php" class="btn">Valider</a>
+                <a href="../controller/cardGameController.php" class="btn">Valider</a>
                 <a href="../controller/homeController.php" class="btn">Retour</a>
             </div>
         </div>

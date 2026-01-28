@@ -2,6 +2,7 @@
     font-family: "dbz";
     src: url(./FightingSpirit.otf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -210,3 +211,130 @@ aside {
     background-color: black;
     color: firebrick;
 }
+
+/*Jeu de carte*/
+
+#game-zone {
+    padding: 35px;
+    background-color: black;
+    width : 100vw;
+    height: 100vh;
+    position : fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/*Réglage du nom de l'arène */
+
+#name-wrapper {
+    position : fixed;
+    z-index : 0;
+
+    width : 100%;
+    height : 20vh;
+
+    top : 40vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#arena-name {
+    width:fit-content;
+    user-select: none;
+
+    color: rgb(88, 14, 14);
+    font-family : 'dbz', sans-serif;
+    font-size: 13vh;
+}
+
+/*les zones de jeux*/
+
+.zone-top, .zone-bottom {
+    height : 50%;
+    width : 100%;
+    display: flex;
+
+    
+    align-items: center;
+}
+
+.zone-top {
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+
+.zone-bottom {
+    flex-direction: row;
+    justify-content: start;
+}
+
+#player-home, #enemy-home {
+    height: 100%;
+    aspect-ratio: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.play-zone {
+    height: 22%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}*/
+
+/*card*/
+
+.card {
+    height: 100%;
+    aspect-ratio: 1/2;
+    background-color: firebrick;
+    padding : 5px;
+    border-radius: 15px;
+
+    z-index: 10;
+}
+
+.incard {
+    position : relative;
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-stat {
+    position:absolute;
+    background-color: black;
+    color : firebrick;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: firebrick solid 1px;
+    padding :1px 3px;
+}
+
+.card-power {
+    top :0;
+    left :0;
+    border-radius : 10px 0 10px 0;
+}
+
+.card-resistance {
+    top :0;
+    right :0;
+    border-radius : 0 10px 0 10px;
+}
+
+.card-hitpoints {
+    bottom :5px;
+    left : 45%;
+    border-radius: 50%;
+}
+
